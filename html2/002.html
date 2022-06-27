@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>002</title>
+</head>
+<body>
+    <p>라이브서버통한 절대주소</p>
+    <img src="http://127.0.0.1:5500/img/1.webp" alt="pokemon" width="200">
+    
+    <p>파일시스템통한 절대주소</p>
+    <img src="D:/html2/img/1.webp" alt="pokemon" width="200">
+
+    <p>현재html에 기반한 상대주소</p>
+    <img src="img/1.webp" alt="pokemon" width="200">
+
+    <p>현재html에 기반한 상대주소</p>
+    <a href="001.html">001.html로 가기 ( workingDir )</a>
+
+    <p>경로가 /로 시작하면 내부 절대주소가 된다( 서버주소를 생략하는 셈 )</p>
+    <p>eg). images/001.jpg = 내 현재 작업dir에 있는 images 폴더 안의 001.jpg</p>
+    <p>eg). /images/001.jpg = [ http://내서버 ] 가 생략된 문법 , 내부 서버 안에 images 폴더 안의 001.jpg</p>
+</body>
+</html>

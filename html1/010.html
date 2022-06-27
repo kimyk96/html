@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>010</title>
+        <style>
+            /* 기본 내장 디자인양식 초기화 해버리기 */
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                list-style: none;
+            }
+            div {
+                width: 500px;
+                background-color: red;
+                margin-bottom: 5px;
+                color: #ffffff;
+            }
+            #a {
+                padding: 20px;
+                box-sizing: border-box; /*너비계산시 유용, 보더패딩값 너비에 포함*/
+            }
+            #b {
+                background-color: blue;
+            }
+            #c {
+                padding: 20px;
+                box-sizing: content-box; /*이건 기본 값*/
+            }
+        </style>
+    </head>
+    <body>
+        <p>공통적으로 width : 500px;</p>
+        <div id="a">box-sizing : border-box; 보더패딩 너비에 포함</div>
+        <div id="b">기준 입니다.</div>
+        <div id="c">box-sizing : content-box; 기본 값</div>
+
+        <p>ul</p>
+        <ul>
+            <li>하나</li>
+            <li>둘</li>
+        </ul>
+
+        <p>ol</p>
+        <ol>
+            <li>하나</li>
+            <li>둘</li>
+        </ol>
+
+        <p>dl</p>
+        <dl>
+            <dt>하나</dt>
+            <dd>하나정의</dd>
+            <dt>둘</dt>
+            <dd>둘정의</dd>
+        </dl>
+    </body>
+</html>

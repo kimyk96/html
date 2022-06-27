@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>008</title>
+        <style>
+            a:visited {
+                color: #551a8b;
+            }
+            #fake {
+                color: #551a8b;
+                text-decoration: underline;
+            }
+            #fake:hover {
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>앵커 태그</h1>
+        <p>a 태그는 반드시 href 속성을 요구합니다.</p>
+        <a href="https://www.naver.com">외부링크</a>
+
+        <p id="fake">가짜링크</p>
+
+        <a href="#bottom" id="top">내부링크(아래로)</a>
+        <p style="height: 1000px"></p>
+        <a href="#top" id="bottom">내부링크(위로)</a>
+        <p style="height: 1000px"></p>
+    </body>
+</html>

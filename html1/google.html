@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon"
+			href="img/google.ico"
+			type="image/x-icon"
+			sizes="16x16"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<title>Google</title>
+		<style>
+			* {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				font-size: 14px;
+			}
+			body {
+				background-color: #202124;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				min-height: 100vh;
+			}
+			header {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 60px;
+				padding: 6px;
+				min-width: 1200px;
+			}
+			header div {
+				display: inline-block;
+				line-height: 38px;
+			}
+			header div a {
+				display: inline-block;
+				text-decoration: none;
+				padding: 5px 0;
+				margin: 0 5px;
+				color: #bdc1c6;
+			}
+			header div a:hover {
+				text-decoration: underline;
+			}
+			header div a img {
+				width: 32px;
+				height: 32px;
+				border-radius: 50%;
+				vertical-align: top;
+			}
+
+			main {
+				width: 100%;
+				padding-bottom: 20vh;
+				min-width: 1200px;
+			}
+			main div {
+				width: 100%;
+				text-align: center;
+			}
+			main div.btnBox input {
+				margin: 11px 4px;
+				padding: 0 16px;
+				border: 1px solid #303134;
+				line-height: 27px;
+				height: 36px;
+				background-color: #303134;
+				color: #e8eaed;
+				border-radius: 4px;
+			}
+			main div.btnBox input:hover {
+				border: 1px solid #4b4b4b;
+			}
+			main div#searchBox {
+				margin: 20px auto;
+				border-radius: 24px;
+				width: 560px;
+				background-color: #202124;
+				border: 1px solid #5b5b5b;
+				height: 44px;
+				padding: 5px 0;
+			}
+			main div#searchBox > input {
+				color: #e8eaed;
+				font-size: 16px;
+				width: 80%;
+				margin: 0 auto;
+				height: 32px;
+				border: 1px solid rgba(255, 255, 255, 0);
+				background-color: rgba(255, 255, 255, 0);
+			}
+			main div#searchBox > input:focus {
+				outline: none;
+			}
+			main div#subBox {
+				display: none;
+				width: 100%;
+				background-color: #303134;
+				padding: 60px 0;
+				margin-top: -38px;
+				border-radius: 25px;
+			}
+			main div#subBox ul li {
+				padding: 5px 60px 5px 0;
+				text-align: left;
+				color: #e8eaed;
+			}
+			main div#subBox ul li i {
+				font-size: 12px;
+				line-height: 18px;
+				padding-right: 35px;
+			}
+			main div#searchBox:hover,
+			main div#searchBox input:hover {
+				background-color: #303134;
+				border: 1px solid rgba(255, 255, 255, 0);
+			}
+			main div#searchBox i {
+				line-height: 32px;
+				padding: 0 15px;
+				color: #8f8f8f;
+			}
+			main div#searchBox i#i_s {
+				float: left;
+			}
+			main div#searchBox i#i_k {
+				padding: 0;
+			}
+			/* #search:focus ~ div#subBox{ display : block; } */
+
+			footer {
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				background-color: #171717;
+				color: #9aa0a6;
+				min-width: 1200px;
+			}
+			footer > div {
+				display: inline-block;
+				width: 100%;
+				line-height: 38px;
+				padding: 0 20px;
+			}
+			footer > div a {
+				display: inline-block;
+				text-decoration: none;
+				padding: 5px 10px;
+				margin: 0 5px;
+				font-size: 13px;
+				color: #9aa0a6;
+			}
+			footer > div a:hover {
+				text-decoration: underline;
+			}
+
+			.left {
+				float: left;
+			}
+			.right {
+				float: right;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="left">
+				<a href="#" style="margin-left: 15px">Google 정보</a>
+				<a href="#">스토어</a>
+			</div>
+			<div class="right">
+				<a href="#">Gmail</a>
+				<a href="#">이미지</a>
+				<a href="#" style="font-size: 18px; margin: 0 20px"
+					><i class="fa fa-th" aria-hidden="true"></i
+				></a>
+				<a href="#" style="padding: 0"
+					><img src="img/profile.jpg" alt="profile" width="auto"
+				/></a>
+			</div>
+		</header>
+		<main>
+			<div>
+				<img src="img/google.png" alt="googleLogo" width="auto" />
+			</div>
+			<div>
+				<form action="https://www.google.com/search?">
+					<div id="searchBox">
+						<i id="i_s" class="fa fa-search" aria-hidden="true"></i>
+						<input
+							id="search"
+							type="text"
+							placeholder=""
+							name="q"
+						/>
+						<i
+							id="i_k"
+							class="fa fa-keyboard-o"
+							aria-hidden="true"
+						></i>
+						<i
+							id="i_m"
+							class="fa fa-microphone"
+							aria-hidden="true"
+						></i>
+						<div id="subBox">
+							<ul>
+								<li>
+									<i
+										id="i_s"
+										class="fa fa-search"
+										aria-hidden="true"
+									></i
+									>추천검색어1
+								</li>
+								<li>
+									<i
+										id="i_s"
+										class="fa fa-search"
+										aria-hidden="true"
+									></i
+									>추천검색어2
+								</li>
+								<li>
+									<i
+										id="i_s"
+										class="fa fa-search"
+										aria-hidden="true"
+									></i
+									>추천검색어3
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div id="defaultBtn" class="btnBox">
+						<input type="submit" value="Google 검색" />
+						<input type="submit" value="I'm Feeling Lucky" />
+					</div>
+				</form>
+			</div>
+		</main>
+		<footer>
+			<div style="border-bottom: 1px solid #212327">
+				<a style="font-size: 15px">대한민국</a>
+			</div>
+			<div>
+				<div class="left">
+					<a href="#">광고</a>
+					<a href="#">비지니스</a>
+					<a href="#">검색의 원리</a>
+				</div>
+				<div class="right">
+					<a href="#">개인정보처리방침</a>
+					<a href="#">약관</a>
+					<a href="#">설정</a>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

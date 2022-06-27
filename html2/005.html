@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>005</title>
+		<style>
+			input {
+				width: 300px;
+				padding: 10px 20px;
+				margin: 5px;
+				box-sizing: border-box;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="" enctype="인코딩 타입 지정, 기본은 urlencoded">
+			<input
+				type="text"
+				name="userid"
+				id="userid"
+				placeholder="아이디"
+				maxlength="10"
+			/><br />
+			<input
+				type="password"
+				name="password"
+				id="password"
+				placeholder="비밀번호"
+				maxlength="10"
+			/><br />
+			<input
+				type="email"
+				name="email"
+				id="email"
+				placeholder="이메일"
+			/><br />
+			<input type="submit" value="제출" id="button" /><br />
+		</form>
+		<ul>
+			<li>name = server 에서 사용하는 선택자</li>
+			<li>id = 프론트에서 사용하는 선택자</li>
+		</ul>
+	</body>
+</html>

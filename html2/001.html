@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>001</title>
+</head>
+<body>
+    <h1>url을 표기하는 방법</h1>
+    <div>
+        <h2>통신규약 (protocol)</h2>
+        <ul>
+            <li>http://test.com   웹을 위한 통신 규약</li>
+            <li>ftp://test.com    파일 다운로드를 위한 통신 규약</li>
+        </ul> 
+        <h2>포트 (port)</h2>
+        <ul>
+            <li>실행중인 인터넷 프로그램들을 구별하는 번호</li>
+            <li>0-65535까지 사용가능</li>
+            <li>포트가 없으면 프로그램이 인터넷을 사용할 수 없다</li>
+            <li>저명한 프로그램들은 자신의 포트번호를 가진다. ( http:80, ftp:21 등 )</li>
+        </ul>
+    </div>
+    <div>
+        그래서
+        i:/html2 => http://127.0.0.1:5500,      파일 시스템 => 라이브 서버
+    </div>
+    <!-- 라이브서버 주소를 사용한 절대주소 예시 -->
+    <img src="http://127.0.0.1:5500/img/1.webp" alt="pokemon" width="200">
+    <!-- 상대주소 예시-->
+    <img src="img/1.webp" alt="pokemon" width="200">
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>014</title>
+        <style>
+            body {
+                background-color: #efefef;
+                margin: 0;
+            }
+            h1 {
+                margin: 0;
+                font-size: 1em;
+            }
+            ul {
+                margin: 0;
+                display: inline-block;
+                width: 100%;
+                background-color: #ffffff;
+            }
+            ul > li {
+                cursor: pointer;
+                width: 16.25%;
+                background-color: #ffffff;
+                opacity: 0.3;
+                padding: 50px 0;
+                font-size: 20px;
+                font-weight: bold;
+                letter-spacing: -1px;
+                transition: 0.5s;
+                float: left;
+                text-align: center;
+                list-style: none;
+                line-height: 20px;
+            }
+            ul > li:hover {
+                opacity: 1;
+                color: #6667ab;
+            }
+            ul > li#logo {
+                font-weight: bolder;
+                font-size: 40px;
+                text-align: left;
+                padding: 0;
+                line-height: 127px;
+                opacity: 1;
+            }
+            ul > li#logo:hover {
+                opacity: 1;
+                color: #000000;
+            }
+            #subMenu {
+                display: none;
+                float: left;
+                margin-top: -5px;
+            }
+            #subMenu li {
+                opacity: 1;
+                padding-top: 0;
+            }
+            #menu:hover > #subMenu {
+                display: block;
+            }
+            ol {
+                padding: 0;
+                font-size: 0.8em;
+                font-weight: lighter;
+            }
+            ol li {
+                list-style: none;
+                line-height: 3em;
+                color: #000000;
+            }
+            ol li:hover {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="menu">
+            <ul id="mainMenu">
+                <li id="logo"><h1>LOGO</h1></li>
+                <li>인사말</li>
+                <li>회사소개</li>
+                <li>사업분야</li>
+                <li>QnA</li>
+                <li>게시판</li>
+            </ul>
+            <ul id="subMenu">
+                <li>&nbsp;</li>
+                <li>
+                    <ol>
+                        <li>사장 인사</li>
+                        <li>직원 인사</li>
+                    </ol>
+                </li>
+                <li>
+                    <ol>
+                        <li>회사 연혁</li>
+                        <li>오시는 길</li>
+                    </ol>
+                </li>
+                <li>
+                    <ol>
+                        <li>진출 분야</li>
+                        <li>해외 지사</li>
+                    </ol>
+                </li>
+                <li>
+                    <ol>
+                        <li>QnA</li>
+                        <li>FAQ</li>
+                        <li>개별연락</li>
+                    </ol>
+                </li>
+                <li>
+                    <ol>
+                        <li>공지사항</li>
+                        <li>이벤트</li>
+                        <li>자유게시판</li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>007</title>
+	</head>
+	<body>
+		<form action="">
+			<p>라디오-단일선택</p>
+			<label for="r1">파랑</label><input type="radio" name="color1" id="r1" value="blue" /> <label for="r2">빨강</label><input type="radio" name="color1" id="r2" value="red" />
+			<label for="r3">노랑</label><input type="radio" name="color1" id="r3" value="yellow" /> <label for="r4">초록</label><input type="radio" name="color1" id="r4" value="green" />
+			<!--
+                - input 태그를 label로 묶어두면 글씨 클릭해도 선택 먹힘
+                - label 태그 적용 예시
+                    <label for="r1">파랑</label><input type="radio" name="color1" id="r1" value="blue" />
+                    <label><input type="radio" name="color1" value="blue" />파랑</label>
+            -->
+			<p>
+				<input type="submit" value="Submit" />
+				<input type="reset" value="Reset" />
+			</p>
+		</form>
+		<hr />
+	</body>
+</html>

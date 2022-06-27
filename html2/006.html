@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>006</title>
+		<style>
+			th {
+				font-size: 25px;
+				font-weight: lighter;
+				padding: 30px 0;
+			}
+			td {
+				text-align: center;
+				padding: 10px;
+			}
+			input {
+				padding: 5px 10px;
+			}
+			input#submit {
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<table>
+			<thead>
+				<tr>
+					<th colspan="2">로그인</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>아이디</td>
+					<td>
+						<input
+							type="email"
+							name="email"
+							placeholder="이메일"
+							maxlength="10"
+						/>
+					</td>
+				</tr>
+				<tr>
+					<td>비밀번호</td>
+					<td>
+						<input
+							type="password"
+							name="password"
+							placeholder="비밀번호"
+							maxlength="10"
+						/>
+					</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="2">
+						<input type="submit" name="submit" id="submit" value="submit" />
+					</td>
+				</tr>
+			</tfoot>
+		</table>
+	</body>
+</html>
